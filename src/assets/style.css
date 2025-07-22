@@ -368,7 +368,7 @@ footer{
     transform: translateY(0);
 }
 
-@media (min-width: 300px) and (max-width: 350px){
+@media (min-width: 280px) and (max-width: 350px){
     .project-content{
         width: 280px;
     }
@@ -383,6 +383,23 @@ footer{
 
     .skills-category{
         width: 280px;
+    }
+
+    .contact-icons{
+        align-items: flex-end;
+        margin: 0;
+    }
+
+    .project-content{
+        width: 230px;
+    }
+
+    .project-content .project-image img{
+        width: 230px;
+    }
+
+    .skills-category{
+        width: 250px;
     }
 }
 
@@ -497,22 +514,17 @@ footer{
         width: 200px;
     }
 
-
-    
-
-
     #home, #about-me, #skills, #projects, #contact-me{
         margin-left: 2rem;
     }
 
-
-
-
-
-
-
-
     footer{
         margin-bottom: 0;
+    }
+}
+@media (min-width: 768px) and (max-width: 1000px){
+    .skills-category{
+         width: 720px;
+         font-size: 20px;
     }
 }
