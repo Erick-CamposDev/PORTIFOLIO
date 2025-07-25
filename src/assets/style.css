@@ -369,6 +369,12 @@ footer{
 }
 
 @media (min-width: 280px) and (max-width: 350px){
+    .description h2{
+        font-size: 14px;
+        width: 70px;
+    }
+
+
     .project-content{
         width: 280px;
     }
@@ -383,6 +389,10 @@ footer{
 
     .skills-category{
         width: 280px;
+    }
+
+    .logo{
+        align-self: center;
     }
 
     .contact-icons{
