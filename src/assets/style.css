@@ -416,23 +416,22 @@ footer{
         align-items: center;
         justify-content: center;
     }
-}
-
-@media (min-width: 280px) and (max-width: 370px){
-    .description h2{
-        font-size: 14px;
-        width: 70px;
-    }
-
 
     .project-content{
-       width: auto;
        height: auto;
        margin-left: 0;
     }
     
     .skills-flex{
         margin-left: 0;
+    }
+
+}
+
+@media (min-width: 280px) and (max-width: 370px){
+    .description h2{
+        font-size: 14px;
+        width: 70px;
     }
 
     .project-content .project-image img{
@@ -457,11 +456,13 @@ footer{
     }
 
     .project-content{
-        width: 230px;
+        width: 250px;
+        height: auto;
+        margin-left: 0;
     }
 
     .project-content .project-image img{
-        width: 230px;
+        width: 250px;
     }
 
     .skills-category{
