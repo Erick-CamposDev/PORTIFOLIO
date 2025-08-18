@@ -122,6 +122,10 @@ a{
     text-transform: uppercase;
 }
 
+#home{
+    padding: 0.65rem;
+}
+
 main{
     font-family: "Oswald";
     padding-bottom: 5rem;
@@ -153,8 +157,11 @@ main section{
     background: linear-gradient(to bottom, rgba(18, 226, 18, 0.35) -15%, rgba(94, 90, 90, 0.35) 100%);
 }
 
-
-
+#home h2, .presentation{
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slideRight 2s forwards;
+}
 
 .cartoon-photo{
     display: flex;
@@ -165,8 +172,11 @@ main section{
 
 .cartoon-photo img{
     width: 200px;
-    border: 2px solid #0a0a0a;
-
+    border: 1px solid #0a0a0a;
+    background: linear-gradient(to bottom, #353333 10%, #746e6e 40%, #918787 85%, #e7d9d9 100%);
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+    animation-delay: 1s;
 }
 
 .home-buttons{
@@ -175,6 +185,9 @@ main section{
     align-content: center;
     justify-content: center;
     gap: 1rem;
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+    animation-delay: 1s;
 }
 
 .btn{
@@ -194,7 +207,7 @@ main section{
 
 #about-me{
     margin-top: 5rem;
-
+    padding: 0.65rem;
 }
 
 .photo{
@@ -206,10 +219,10 @@ main section{
 }
 
 .my-photo{
-    width: 230px;
-    height: 230px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
-    border: 4px solid #0a0a0a;
+    border: 3px solid #0a0a0a;
 }
 
 .skills-flex{
@@ -256,6 +269,7 @@ main section{
     flex-flow: column wrap;
     background: #dad6d6;
     width: 315px;
+    height: 446px;
     color: #0a0a0a;
     margin-bottom: 2.5rem;
     margin-left: 2rem;
@@ -355,6 +369,13 @@ footer{
     text-align: center;
 }
 
+#skills, #projects, #contact-me{
+    padding: 0.65rem;
+}
+
+.project-flex{
+    padding-top: 1rem;
+}
 
 .project-content, .skills-category{
     opacity: 0;
@@ -368,7 +389,36 @@ footer{
     transform: translateY(0);
 }
 
-@media (min-width: 280px) and (max-width: 350px){
+@keyframes slideRight{
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn{
+    to{
+        opacity: 1;
+    }
+}
+
+@media (min-width: 280px) and (max-width: 768px){
+    .skills-flex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .project-flex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 280px) and (max-width: 370px){
     .description h2{
         font-size: 14px;
         width: 70px;
@@ -376,15 +426,21 @@ footer{
 
 
     .project-content{
-        width: 280px;
+       width: auto;
+       height: auto;
+       margin-left: 0;
     }
     
+    .skills-flex{
+        margin-left: 0;
+    }
+
     .project-content .project-image img{
         width: 280px;
     }
 
     .presentation{
-        width: 280px;
+        width: 270px;
     }
 
     .skills-category{
@@ -536,5 +592,17 @@ footer{
     .skills-category{
          width: 720px;
          font-size: 20px;
+    }
+}
+
+@media (min-width: 1320px){
+    .about-content{
+        font-size: 20px;
+        max-width: 950px;
+    }
+
+    .my-photo{
+        width: 300px;
+        height: 300px;
     }
 }

@@ -3,7 +3,7 @@
 Este é o repositório do meu portfólio pessoal, desenvolvido com **HTML**, **CSS** e **JavaScript**. O site foi criado com foco em **responsividade** (Mobile First), desempenho e uma navegação fluida com animações suaves ao fazer **scroll**.
 
 > **🚧 Observação importante:**  
-> Este portfólio está em **constante desenvolvimento**. Os projetos listados são **apenas placeholders** e ainda não representam o meu nível atual de habilidade.  
+> Este portfólio está em **constante desenvolvimento**. Os projetos listados são **apenas placeholders** com exceção do projeto VivaBem e ainda não representam o meu nível atual de habilidade.  
 > Além disso, o botão de **“Baixar Currículo”** ainda **não está funcional** neste momento.
 
 ---
@@ -33,6 +33,7 @@ Principais tecnologias que utilizo e estou estudando:
 ### 📂 Projetos
 Lista de projetos desenvolvidos.  
 ⚠️ **Nota:** Os projetos são **placeholders** temporários. Em breve, serão substituídos por projetos reais.
+Apenas o projeto VivaBem é um projeto real.
 
 Cada projeto inclui:
 - Imagem de prévia
@@ -77,7 +78,7 @@ Construído com **Mobile First**, garantindo boa visualização e usabilidade em
 
 - [ ] Substituir os projetos por versões reais
 - [ ] Ativar o botão de download de currículo
-- [ ] Melhorar as animações de scroll com JavaScript avançado
+- [X] Melhorar as animações de scroll com JavaScript avançado
 
 ---
 
