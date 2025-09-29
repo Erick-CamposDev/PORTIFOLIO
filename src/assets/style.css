@@ -484,6 +484,15 @@ footer {
     justify-content: center;
   }
 
+  .cartoon-photo img {
+    width: 195px;
+    height: 195px;
+  }
+
+  .btn {
+    padding: 0.75rem;
+  }
+
   .project-content {
     height: auto;
     margin-left: 0;
