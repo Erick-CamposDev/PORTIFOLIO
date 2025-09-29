@@ -438,6 +438,7 @@ footer {
   padding-top: 1rem;
 }
 
+.skills-select,
 .project-content,
 .about-content,
 #contact-me {
@@ -446,6 +447,7 @@ footer {
   transition: opacity 0.6s ease;
 }
 
+.skills-select.show,
 .project-content.show,
 .about-content.show,
 #contact-me.show {

@@ -10,7 +10,9 @@ const observer = new IntersectionObserver((entries) => {
   });
 });
 document
-  .querySelectorAll(".project-content, .about-content, #contact-me")
+  .querySelectorAll(
+    ".skills-select, .project-content, .about-content, #contact-me"
+  )
   .forEach((el) => observer.observe(el));
 
 function selectCategory() {
