@@ -439,7 +439,6 @@ footer {
 }
 
 .project-content,
-.skills-category,
 .about-content,
 #contact-me {
   opacity: 0;
@@ -448,7 +447,6 @@ footer {
 }
 
 .project-content.show,
-.skills-category.show,
 .about-content.show,
 #contact-me.show {
   opacity: 1;
