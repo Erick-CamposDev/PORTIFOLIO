@@ -184,6 +184,7 @@ main section {
   opacity: 0;
   animation: fadeIn 1s ease-in forwards;
   animation-delay: 1s;
+  box-shadow: 6px 6px 12px #0000008c;
 }
 
 .home-buttons {
@@ -234,6 +235,44 @@ main section {
   height: 250px;
   border-radius: 50%;
   border: 3px solid #0a0a0a;
+  box-shadow: 6px 6px 12px #0000008c;
+}
+
+.skills-select {
+  padding: 1rem 1.5rem;
+}
+
+#selectSkill {
+  width: 35%;
+  height: 80px;
+  padding: 0.5rem;
+  text-transform: uppercase;
+  font-family: "Lato";
+  font-weight: 800;
+  background: linear-gradient(
+    to bottom,
+    #687474 15%,
+    rgb(97, 109, 99, 0.1) 100%
+  );
+  color: #dad6d6;
+  border: 2px solid #0a0a0a;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+#selectSkill option {
+  background: #687474;
+}
+
+#selectSkill option:disabled {
+  color: #ffffff;
+  font: 800;
+}
+
+#selectSkill:focus {
+  outline: none;
+  border: 2px solid #dad6d6;
 }
 
 .skills-flex {
@@ -244,7 +283,7 @@ main section {
   margin-left: 1rem;
 }
 .skills-category {
-  display: flex;
+  display: none;
   flex-flow: column wrap;
   margin-bottom: 1rem;
   border: 2px solid #0a0a0a;
@@ -411,7 +450,7 @@ footer {
 .project-content.show,
 .skills-category.show,
 .about-content.show,
-#contact-me.show{
+#contact-me.show {
   opacity: 1;
   transform: translateY(0);
 }
@@ -451,6 +490,16 @@ footer {
 
   .skills-flex {
     margin-left: 0;
+  }
+
+  .skills-select {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #selectSkill {
+    width: 70%;
   }
 }
 
