@@ -174,7 +174,7 @@ main section {
 .cartoon-photo img {
   width: 230px;
   height: 230px;
-  border: 1px solid #0a0a0a;
+  border: 2px solid #0a0a0a;
   background: linear-gradient(
     to bottom,
     #353333 10%,
@@ -186,6 +186,7 @@ main section {
   animation: fadeIn 1s ease-in forwards;
   animation-delay: 1s;
   box-shadow: 6px 6px 12px #0000008c;
+  border-radius: 12px;
 }
 
 .home-buttons {
